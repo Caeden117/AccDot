@@ -1,0 +1,105 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Installers\WarmupInstaller.cs" />
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Installers\ADGameInstaller" />
+    <None Remove="Installers\GameInstaller" />
+    <None Remove="Installers\NewFile1.txt" />
+    <None Remove="manifest.json" />
+    <None Remove="NewFile1.txt" />
+    <None Remove="Objects\NewFile1.txt" />
+    <None Remove="Objects\NoteDotController" />
+    <None Remove="UI\DotTab.bsml" />
+    <None Remove="UI\NewFile1.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="manifest.json" />
+    <EmbeddedResource Include="UI\DotTab.bsml" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.UI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Main">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Main.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colors">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Colors.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="GameplayCore">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\GameplayCore.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="BeatmapCore">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BeatmapCore.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="HMLib">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\HMLib.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="HMUI">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\HMUI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="HMRendering">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\HMRendering.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="IPA.Loader">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\IPA.Loader.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="BSML">
+			<HintPath>$(BeatSaberDir)\Plugins\BSML.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Zenject">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Zenject.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Zenject-usage">
+			<HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Zenject-usage.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="SiraUtil">
+			<HintPath>$(BeatSaberDir)\Plugins\SiraUtil.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(BeatSaberDir)\Libs\0Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+</Project>

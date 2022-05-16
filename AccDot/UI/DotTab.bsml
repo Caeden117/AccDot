@@ -1,0 +1,12 @@
+﻿<bg id='root' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+    <horizontal pad-left="43" pad-bottom="34">
+        <text text="acc!" />
+    </horizontal>
+    
+    <modifier-container horizontal-fit='PreferredSize' preferred-width='90'>
+        <increment-setting text='Dot scale' value='dot-scale' increment='0.05' apply-on-change='true' bind-value='true'/>
+        <increment-setting text='Dot distance' value='dot-distance' increment='0.05' apply-on-change='true' bind-value='true'/>
+        <button text='Pick color' click-event='show-dot-color'/>
+        <modal-color-picker id='modal' value='dot-color' clickerino-offerino-closerino='true' show-event='show-dot-color'/>
+    </modifier-container>
+</bg>

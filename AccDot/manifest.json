@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "AccDot",
+  "name": "AccDot",
+  "author": "Pinkwabber117",
+  "version": "0.1.0",
+  "gameVersion": "1.21.0",
+  "description":  "beat saber mod speedrun sub 1-hour 4100",
+  "dependsOn": {
+    "BSIPA": "^4.2.1",
+    "SiraUtil": "^3.0.0"
+  }
+}
